@@ -77,7 +77,7 @@ public class PrefixTree {
     {
         PrefixNode tree = createTree();
         
-        String[] words = {"an", "ant", "all", "allot", "alloy", "aloe", "are", "ate", "be"};
+               String[] words = {"a", "ai", "book", "bee", "cee", "cin", "core", "deed", "dee","donkey","don"};
         
         for (int i = 0; i < words.length; i++)
             insertWord(tree, words[i]);
@@ -85,7 +85,7 @@ public class PrefixTree {
         char[] branch = new char[50];
         printTree(tree, 0, branch);
         
-        String searchWord = "all";
+        String searchWord = "deed";
         if (find(tree, searchWord))
         {
             System.out.println("The word was found");
